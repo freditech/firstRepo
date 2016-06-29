@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="x">
+<head>
+<style>
+html, body {height: 100%;margin:0;}
+.flex {display: flex}
+.flex-auto {flex: auto}
+.flex-column {flex-flow: column}
+.flex-row {flex-flow: row}
+.flex-center {justify-content: center; align-items: center}
+.container {width: 100%; height: 100%}
+.top {background: #ddd}
+.sidebar {background: #333; color: #fff; width: 100px;}
+</style>
+</head>
+<body>
+<div class="container flex flex-column">
+  <div class="flex flex-row flex-auto">
+    <div class="top flex flex-auto flex-center">
+    Top
+    </div>
+    <div class="sidebar">sidebar</div>
+  </div>
+  <div style="background:blue">Bottom</div>
+</div>
+</body>
+</html>
