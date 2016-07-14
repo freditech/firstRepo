@@ -1,0 +1,6 @@
+applications:
+- name: JavaHelloWorld
+  instances: 1
+  memory: 256M
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  path: helloworld_webapp.war
